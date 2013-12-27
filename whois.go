@@ -42,7 +42,7 @@ func main() {
 		lines := strings.Split(apiresp.Message,"\n")
 
 		for _,x := range lines {
-			if (strings.Index(x,":") < len(x)-1) && (strings.Index(x,":") > 0) {
+			if strings.Index(x,":") < len(x)-1 {
 				fmt.Println(x);
 			}
 		}
